@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block username %} USER {% endblock %}</h1>
+    {% for user in users %}
+        <div class='user'>
+            <h3>#{{ user[0] }} - {{ user[1] }} BY {{ user[2] }}</h3>
+            <i><p>({{ user[1] }} )</p></i>
+            <p class='review'>{{ user[1] }}</p>
+            <i><p>Added {{ user[1] }}</p></i>
+        </div>
+    {% endfor %}
+{% endblock %}

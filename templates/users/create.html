@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block username %} Add a New User {% endblock %}</h1>
+    <form method="post">
+        <p>
+            <label for="username">UserName</label>
+            <input type="text" name="username"
+                   placeholder="User Name">
+            </input>
+        </p>
+
+        <p>
+            <label for="email">Email </label>
+            <input type="email" name="email"
+                   placeholder="email">
+            </input>
+        </p>
+
+       
+        <p>
+            <button type="submit">Submit</button>
+        </p>
+    </form>
+{% endblock %}
